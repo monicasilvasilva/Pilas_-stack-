@@ -59,3 +59,15 @@ case 3: { // Redo
                     }
                     break;
                 }
+                case 4: { // Peek
+                    String cima = peek(acciones);
+                    if (cima == null) {
+                        System.out.println("Texto vacío.");
+                    } else {
+                        System.out.println("Última línea (peek): " + cima);
+                        // Si quieres ver todo el texto en orden, descomenta la línea siguiente:
+                        // mostrarTextoCompleto();
+                    }
+                    break;
+                }
+                
