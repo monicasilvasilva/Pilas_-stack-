@@ -7,3 +7,10 @@ do {
             System.out.println("5. Mostrar todo el texto");
             System.out.println("6. Salir");
             System.out.print("Elige una opción: ");
+            while (!sc.hasNextInt()) {
+        System.out.println("Ingresa un número válido.");
+                sc.next();
+                System.out.print("Elige una opción: ");
+            }
+opcion = sc.nextInt();
+            sc.nextLine(); // limpiar salto de línea
