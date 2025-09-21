@@ -49,3 +49,13 @@ push(acciones, linea);
         }
         break;
     }
+case 3: { // Redo
+                    if (isEmpty(deshechas)) {
+                        System.out.println("No hay acciones para rehacer.");
+                    } else {
+                        String rec = pop(deshechas);
+                        push(acciones, rec);
+                        System.out.println("Se rehizo: \"" + rec + "\"");
+                    }
+                    break;
+                }
