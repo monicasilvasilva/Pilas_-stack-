@@ -49,13 +49,19 @@ Con este programa se entiende cómo funcionan las pilas y cómo se pueden aplica
 6. Salir
 
 ## Cómo ejecutar
-**Requisitos:** Java y Git.
+**Requisitos:** Java, Git y Visual Studio Code.
 
 Clonar Repositorio
 ```bash
 git clone https://github.com/monicasilvasilva/Pilas_-stack-
 cd nombre-del-repositorio
 ```
+
+Abrir entorno de ejecuciones (V COde)
+```bash
+code .
+```
+
 Ejecutar codigo dentro de la terminal de visual studio code 
 ```bash
 javac -d ".\out" ".\src\Main.java"
@@ -66,4 +72,5 @@ java -cp ".\out" src.Main
 - ![img1.png](img1.png)
 - ![img2.png](img2.png)
 - ![img3.png](img3.png)
+
 
