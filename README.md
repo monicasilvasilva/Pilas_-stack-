@@ -56,7 +56,7 @@ Clonar Repositorio
 git clone https://github.com/monicasilvasilva/Pilas_-stack-
 cd nombre-del-repositorio
 ```
-Ejecutar codigo 
+Ejecutar codigo dentro de la terminal de visual studio code 
 ```bash
 javac -d ".\out" ".\src\Main.java"
 java -cp ".\out" src.Main
@@ -66,3 +66,4 @@ java -cp ".\out" src.Main
 - ![img1.png](img1.png)
 - ![img2.png](img2.png)
 - ![img3.png](img3.png)
+
