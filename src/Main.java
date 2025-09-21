@@ -39,3 +39,13 @@ push(acciones, linea);
                     System.out.println("Línea agregada.");
                     break;
                             }
+    case 2: { // Undo
+        if (isEmpty(acciones)) {
+            System.out.println("No hay acciones para deshacer.");
+        } else {
+            String ult = pop(acciones);
+            push(deshechas, ult);
+            System.out.println("Se deshizo: \"" + ult + "\"");
+        }
+        break;
+    }
