@@ -1,3 +1,17 @@
+package src;
+
+import java.util.Scanner;
+import java.util.Stack;
+
+public class Main {
+
+    // Pilas con los nombres solicitados
+    static Stack<String> acciones = new Stack<>(); // guarda las líneas escritas (estado actual)
+    static Stack<String> deshechas = new Stack<>(); // guarda lo deshecho para poder rehacer
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int opcion;
 do {
         System.out.println("\n== Editor (Undo/Redo con java.util.Stack) ==");
             System.out.println("1. Escribir texto (agregar línea)");
