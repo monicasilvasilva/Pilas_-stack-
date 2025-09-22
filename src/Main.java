@@ -70,4 +70,19 @@ case 3: { // Redo
                     }
                     break;
                 }
+                case 5: {
+        mostrarTextoCompleto();
+        break;
+    }
+    case 6:
+        System.out.println("Saliendo... ¡Hasta luego!");
+        break;
+    default:
+        System.out.println("Opción inválida. Intenta de nuevo.");
+}
+
+} while (opcion != 6);
+
+        sc.close();
+    }
                 
