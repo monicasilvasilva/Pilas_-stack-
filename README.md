@@ -69,9 +69,7 @@ java -cp ".\out" src.Main
 ```
 
 ## Captura de pantalla del código
-- ![img1.png](img1.png)
-- ![img2.png](img2.png)
-- ![img3.png](img3.png)
+- ![ejecucion-en-code.png](ejecucion-en-code.png)
 <img width="1383" height="620" alt="Captura de pantalla 2025-09-21 a la(s) 7 30 04 p m" src="https://github.com/user-attachments/assets/e4dac7e8-599c-4053-8c19-000695cfe747" />
 
 <img width="1384" height="623" alt="Captura de pantalla 2025-09-21 a la(s) 7 30 38 p m" src="https://github.com/user-attachments/assets/8dc20f25-24b0-44a0-87b8-b5ebccbab9b9" />
