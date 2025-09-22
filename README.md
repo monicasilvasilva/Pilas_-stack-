@@ -54,7 +54,7 @@ Con este programa se entiende cómo funcionan las pilas y cómo se pueden aplica
 Clonar Repositorio
 ```bash
 git clone https://github.com/monicasilvasilva/Pilas_-stack-
-cd nombre-del-repositorio
+cd Pilas_-stack-
 ```
 
 Abrir entorno de ejecuciones (V COde)
@@ -72,5 +72,6 @@ java -cp ".\out" src.Main
 - ![img1.png](img1.png)
 - ![img2.png](img2.png)
 - ![img3.png](img3.png)
+
 
 
