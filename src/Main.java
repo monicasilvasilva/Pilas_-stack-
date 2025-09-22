@@ -106,4 +106,19 @@ case 3: { // Redo
     static boolean isEmpty(Stack<String> pila) {
         return pila.empty();
     }
+    // Utilidades
+
+    // Imprime todas las líneas en orden (de la primera a la última)
+    static void mostrarTextoCompleto() {
+        if (acciones.empty()) {
+            System.out.println("(vacío)");
+            return;
+        }
+        System.out.println("Texto completo:");
+        // En Stack (Vector) el índice 0 es el primero insertado y size()-1 es la cima
+        for (int i = 0; i < acciones.size(); i++) {
+            System.out.println(acciones.get(i));
+        }
+    }
+}
                 
