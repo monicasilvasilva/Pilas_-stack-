@@ -85,4 +85,25 @@ case 3: { // Redo
 
         sc.close();
     }
+    // Operaciones de la Pila
+
+    // push(): inserta en la cima
+    static void push(Stack<String> pila, String valor) {
+        pila.push(valor);
+    }
+
+    // pop(): quita y devuelve la cima (o null si vacía)
+    static String pop(Stack<String> pila) {
+        return pila.empty() ? null : pila.pop();
+    }
+
+    // peek(): devuelve la cima sin quitar (o null si vacía)
+    static String peek(Stack<String> pila) {
+        return pila.empty() ? null : pila.peek();
+    }
+
+    // isEmpty(): ¿pila vacía?
+    static boolean isEmpty(Stack<String> pila) {
+        return pila.empty();
+    }
                 
