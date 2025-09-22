@@ -12,8 +12,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int opcion;
-do {
-        System.out.println("\n== Editor (Undo/Redo con java.util.Stack) ==");
+        do {
+            System.out.println("\n== Editor (Undo/Redo con java.util.Stack) ==");
             System.out.println("1. Escribir texto (agregar línea)");
             System.out.println("2. Deshacer (Undo)");
             System.out.println("3. Rehacer (Redo)");
@@ -22,34 +22,34 @@ do {
             System.out.println("6. Salir");
             System.out.print("Elige una opción: ");
             while (!sc.hasNextInt()) {
-        System.out.println("Ingresa un número válido.");
+                System.out.println("Ingresa un número válido.");
                 sc.next();
                 System.out.print("Elige una opción: ");
             }
-opcion = sc.nextInt();
+            opcion = sc.nextInt();
             sc.nextLine(); // limpiar salto de línea
 
-switch (opcion) {
-        case 1: { // Escribir
-        System.out.print("Escribe la línea: ");
-String linea = sc.nextLine();
-// Nueva acción invalida el historial de 'deshechas'
+            switch (opcion) {
+                case 1: { // Escribir
+                    System.out.print("Escribe la línea: ");
+                    String linea = sc.nextLine();
+                    // Nueva acción invalida el historial de 'deshechas'
                     deshechas.clear();
-push(acciones, linea);
+                    push(acciones, linea);
                     System.out.println("Línea agregada.");
                     break;
-                            }
-    case 2: { // Undo
-        if (isEmpty(acciones)) {
-            System.out.println("No hay acciones para deshacer.");
-        } else {
-            String ult = pop(acciones);
-            push(deshechas, ult);
-            System.out.println("Se deshizo: \"" + ult + "\"");
-        }
-        break;
-    }
-case 3: { // Redo
+                }
+                case 2: { // Undo
+                    if (isEmpty(acciones)) {
+                        System.out.println("No hay acciones para deshacer.");
+                    } else {
+                        String ult = pop(acciones);
+                        push(deshechas, ult);
+                        System.out.println("Se deshizo: \"" + ult + "\"");
+                    }
+                    break;
+                }
+                case 3: { // Redo
                     if (isEmpty(deshechas)) {
                         System.out.println("No hay acciones para rehacer.");
                     } else {
@@ -71,17 +71,17 @@ case 3: { // Redo
                     break;
                 }
                 case 5: {
-        mostrarTextoCompleto();
-        break;
-    }
-    case 6:
-        System.out.println("Saliendo... ¡Hasta luego!");
-        break;
-    default:
-        System.out.println("Opción inválida. Intenta de nuevo.");
-}
+                    mostrarTextoCompleto();
+                    break;
+                }
+                case 6:
+                    System.out.println("Saliendo... ¡Hasta luego!");
+                    break;
+                default:
+                    System.out.println("Opción inválida. Intenta de nuevo.");
+            }
 
-} while (opcion != 6);
+        } while (opcion != 6);
 
         sc.close();
     }
@@ -121,4 +121,3 @@ case 3: { // Redo
         }
     }
 }
-                
